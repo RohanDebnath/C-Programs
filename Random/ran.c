@@ -1,20 +1,29 @@
-#include<stdio.h>
-#include<string.h>
-union rohan
-{
-    float page; // Ask sir 
-    float number;
-    char c1[29];
-};
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-    union rohan s1;
-    s1.page=79;
-    s1.number=99.3948;
-//    s1.c1='roh';
-    printf("%f\n",s1.number);
-    strcpy(s1.c1,"Rohan");
-    printf("%s\n",s1.c1);
-    printf("%f\n", s1.page);
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    int min_sum=0,max_sum=0;
+    for (int i=0; i<n; i++) {
+    scanf("%d ",&arr[i]);
+    }
+    for (int i=0; i<n; i++) {
+        max_sum=max_sum+arr[i+1];
+    }
+    for (int i=0; i<n-1; i++) {
+        min_sum=min_sum+arr[i];
+    }
+    printf("%d\n",min_sum);
+    printf("%d",max_sum);
 }

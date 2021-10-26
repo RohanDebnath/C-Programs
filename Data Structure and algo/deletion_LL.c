@@ -82,8 +82,8 @@ struct Node * delete_AtEnd(struct Node *head)
     fourth->next = NULL;
     Transverse(head);
    // head=delete_AtFirest(head);
-  // head = delete_AtIndex(head,2);
-  head = delete_AtEnd(head);
+   head = delete_AtIndex(head,2);
+  //head = delete_AtEnd(head);
     Transverse(head);
 
  }

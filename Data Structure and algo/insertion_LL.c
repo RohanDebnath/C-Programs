@@ -90,10 +90,10 @@ struct Node * insert_AfterNode(struct Node *head , struct Node *previous ,int va
     fourth ->data = 90;
     fourth->next = NULL;
     Transverse(head);
-     //head= insert_atfirst(head, 7);
+     head= insert_atfirst(head, 7);
     //head=insert_AtIndex(head,2,69);
    // head = inser_AtEnd(head,1);'
-   head=insert_AfterNode(head,third,07);
+   //head=insert_AfterNode(head,third,07);
     Transverse(head);
 
  }
